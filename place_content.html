@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Content</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: #ddd;
+        }
+
+        .container {
+            background-color: black;
+            width: 80%;
+            height: 500px;
+            margin: 50px auto;
+            display: grid;
+            grid-template-rows: 80px 80px;
+            grid-template-columns: 120px 180px 120px;
+            gap: 5px;
+            /* place-content: ; shorthand untuk menulis justify-content dan align-content dlm 1 deklasi */
+            /* place-content: justify-content align-content ; */
+            /* place-content: center ;  jika sama*/
+            /* place-content: center end; */
+            /* place-content: space-around space evenly; */
+
+            place-content: center end;
+
+        }
+
+        .items {
+            background-color: lightblue;
+            height: 50px;
+            width: 100px;
+            border: 3px solid black;
+        }
+
+        .items:nth-child(even) {
+            background-color: salmon;
+        }
+
+
+
+        .items.i7,
+        .items.i4,
+        .items.i1 {
+            /* width: 130px; */
+        }
+
+        .items.i2,
+        .items.i5,
+        .items.i8 {
+            /* width: 80px; */
+        }
+
+        .items.i3,
+        .items.i6,
+        .items.i9 {
+            /* width: 170px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items i1">1</div>
+        <div class="items i2">2</div>
+        <div class="items i3">3</div>
+        <div class="items i4">4</div>
+        <div class="items i5">5</div>
+        <div class="items i6">6</div>
+        <div class="items i7">7</div>
+        <div class="items i8">8</div>
+        <div class="items i9">9</div>
+    </div>
+</body>
+
+</html>
