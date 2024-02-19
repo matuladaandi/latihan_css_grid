@@ -270,6 +270,9 @@ body {
 
 /* mobile */
 @media (max-width:600px) {
+    body{
+        margin: 15px;
+    }
     .header {
         grid-template-areas: 'hero' 'feature-1' 'feature-2';
     }
